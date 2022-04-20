@@ -87,6 +87,9 @@ And dynamic the section by php -->
 
         <?php
 
+
+            shuffle ($teams );
+
             foreach ($teams as $key=> $sname){
 
         ?>
