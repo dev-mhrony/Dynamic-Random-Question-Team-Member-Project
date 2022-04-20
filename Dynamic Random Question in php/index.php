@@ -179,10 +179,9 @@ Your questions must be come randomize order -->
     ?>
 
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault-<?php echo $key; ?>" id="flexRadioDefault1">
             <?php echo $mcq ?>       <!-- এখানে প্রত্যেকটি mcq উত্তরকে প্রিন্ট করতে এটি ব্যবহার করা হয়েছে ।    -->
-            </label>
+            
         </div>
         
 
