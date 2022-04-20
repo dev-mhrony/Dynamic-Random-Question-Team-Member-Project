@@ -45,6 +45,7 @@ And dynamic the section by php -->
             'fb_link' => "https://www.facebook.com/mh.rony.dhanvi",
             'ins_link' => "#",
             'twe_link' => "#",
+            'img' => "./img/3.jpg",
 
 
         ],
@@ -55,6 +56,7 @@ And dynamic the section by php -->
             'fb_link' => "https://www.facebook.com/mh.rony.dhanvi",
             'ins_link' => "#",
             'twe_link' => "#",
+            'img' => "./img/2.jpg",
 
 
         ],
@@ -65,6 +67,7 @@ And dynamic the section by php -->
             'fb_link' => "https://www.facebook.com/mh.rony.dhanvi",
             'ins_link' => "#",
             'twe_link' => "#",
+            'img' => "./img/1.jpg",
 
 
         ]
@@ -84,7 +87,7 @@ And dynamic the section by php -->
 
         <?php
 
-            foreach ($teams as $key=> $name){
+            foreach ($teams as $key=> $sname){
 
         ?>
 
@@ -93,11 +96,11 @@ And dynamic the section by php -->
             <div class="card">
                 <div class="content">
                     <div class="imgBx">
-                        <img src="./team1.jpg" alt="">
+                        <img src="<?php echo $sname ['img']; ?>" alt="">
                     </div>
                     <div class="contentBx">
-                        <h4>  </h4>
-                        <h5> </h5>
+                        <h4> <?php echo $sname ['name']; ?> </h4>
+                        <h5> <?php echo $sname ['surname']; ?></h5>
                     </div>
                     <div class="sci">
                         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
