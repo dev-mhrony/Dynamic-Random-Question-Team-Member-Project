@@ -112,11 +112,3 @@ And dynamic the section by php -->
         
 
         </div>
-
-
-    <?php } ?>
-    
-                    <!-- foreach Looping Stop  -->
-
-</body>
-</html>
