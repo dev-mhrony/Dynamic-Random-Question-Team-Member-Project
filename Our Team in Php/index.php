@@ -62,7 +62,7 @@ And dynamic the section by php -->
         ],
 
         [
-            'name' => "Kamal",
+            'name' => "Sruti",
             'surname' => "UI/UX Designer",
             'fb_link' => "https://www.facebook.com/mh.rony.dhanvi",
             'ins_link' => "#",
