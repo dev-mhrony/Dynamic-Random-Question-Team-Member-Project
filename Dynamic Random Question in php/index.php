@@ -168,10 +168,10 @@ Your questions must be come randomize order -->
 
         shuffle ($questionSet);  //এখাণে প্রথমেই সাফল এর মাধ্যমে প্রত্যেকটি এরেকে ঘুরিয়ে এর ভিতরের এরেকে রেন্ডমলি দেখাতে  এটি ব্যবহার করা হয়েছে ।
 
-        foreach($questionSet as $key => $qun){
+        foreach($questionSet as $index => $qun){
 
         
-        echo ++$key ." . ".  $qun['question'];      //এখানে একটি করে প্রশ্ন দেখানোর জন্য এরের মধ্যে থেকে  question নামের এরেকে বের করে নেয়া হয়েছে , কারণ  questionSet এই এরের মধ্যে যেহেতু ২ টা এরে আছে তার জন্য এর থেকে ১ টি এরে নিয়ে তার সাথে ডিফল্ট ইনডেক্স নাম্বার যুক্ত করে ++ করা হয়েছে যাতে করে প্রশ্নের প্রথমে প্রশ্নের নাম্বার দেখা যায় । 
+        echo ++$index ." . ".  $qun['question'];      //এখানে একটি করে প্রশ্ন দেখানোর জন্য এরের মধ্যে থেকে  question নামের এরেকে বের করে নেয়া হয়েছে , কারণ  questionSet এই এরের মধ্যে যেহেতু ২ টা এরে আছে তার জন্য এর থেকে ১ টি এরে নিয়ে তার সাথে ডিফল্ট ইনডেক্স নাম্বার যুক্ত করে ++ করা হয়েছে যাতে করে প্রশ্নের প্রথমে প্রশ্নের নাম্বার দেখা যায় । 
 
         foreach($qun ['options'] as $key1 => $mcq){         //এখানে একাধিক এরের মধ্যে থেকে একটি ডেটা দেখানোর জন্য এই foreach এর ব্যবহার করা হয়েছে ।
     
@@ -179,7 +179,7 @@ Your questions must be come randomize order -->
     ?>
 
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault -<?php echo $key; ?>" id="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault -<?php echo $index; ?>" id="flexRadioDefault1">
             <label class="form-check-label" for="flexRadioDefault1">
             <?php echo $mcq ?>       <!-- এখানে প্রত্যেকটি mcq array প্রিন্ট করতে এটি ব্যবহার করা হয়েছে ।    -->
             </label>
