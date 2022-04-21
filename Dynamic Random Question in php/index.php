@@ -173,15 +173,16 @@ Your questions must be come randomize order -->
         
         echo ++$key ." . ".  $qun['question'];      //এখানে একটি করে প্রশ্ন দেখানোর জন্য এরের মধ্যে থেকে  question নামের এরেকে বের করে নেয়া হয়েছে , কারণ  questionSet এই এরের মধ্যে যেহেতু ২ টা এরে আছে তার জন্য এর থেকে ১ টি এরে নিয়ে তার সাথে ডিফল্ট ইনডেক্স নাম্বার যুক্ত করে ++ করা হয়েছে যাতে করে প্রশ্নের প্রথমে প্রশ্নের নাম্বার দেখা যায় । 
 
-        foreach($qun ['options'] as $key1 => $mcq){         //এখানে একাধিক এরের মধ্যে থেকে একটি ডেটা দেখানোর জন্য এই ফর ইচ এর ব্যবহার করা হয়েছে ।
+        foreach($qun ['options'] as $key1 => $mcq){         //এখানে একাধিক এরের মধ্যে থেকে একটি ডেটা দেখানোর জন্য এই foreach এর ব্যবহার করা হয়েছে ।
     
 
     ?>
 
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault-<?php echo $key; ?>" id="flexRadioDefault1">
-            <?php echo $mcq ?>       <!-- এখানে প্রত্যেকটি mcq উত্তরকে প্রিন্ট করতে এটি ব্যবহার করা হয়েছে ।    -->
-            
+            <input class="form-check-input" type="radio" name="flexRadioDefault -<?php echo $key; ?>" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+            <?php echo $mcq ?>       <!-- এখানে প্রত্যেকটি mcq array প্রিন্ট করতে এটি ব্যবহার করা হয়েছে ।    -->
+            </label>
         </div>
         
 
